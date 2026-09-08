@@ -153,6 +153,8 @@ int main(int argc, char *argv[]){
     task *em_execucao = NULL;
     int unidades_execucao = 0;
 
+    int unidades_idle = 0;
+
 
     while(tempo <tempo_total){
 
@@ -192,7 +194,17 @@ int main(int argc, char *argv[]){
             atual = atual->next;
         }
 
+        if(escolhida == NULL){
+            unidades_idle++;
+        }
+
         if(escolhida != em_execucao){
+
+            if(unidades_idle > 0){
+                fprintf(saida,"idle for %d units\n", unidades_idle);
+                unidades_idle = 0;
+            }
+
             if(em_execucao != NULL){
                 fprintf(saida,"[%s] for %d units - H\n",em_execucao->nome,unidades_execucao);
             }
@@ -203,10 +215,6 @@ int main(int argc, char *argv[]){
 
         if(escolhida != NULL){
             unidades_execucao++;
-        }
-
-        if(escolhida != NULL){
-            printf("tempo=%d tarefa=%s restante=%d deadline=%d\n",tempo,escolhida->nome,escolhida->restante,escolhida->deadline_absoluto);
         }
 
         if(escolhida != NULL){
@@ -248,8 +256,13 @@ int main(int argc, char *argv[]){
         tempo++;
     }
 
+    if(unidades_idle > 0){
+        fprintf(saida,"idle for %d units\n",unidades_idle);
+        unidades_idle = 0;
+    }
+
     task *atual = NULL;
-    
+
     atual = head;
 
     while(atual != NULL){
