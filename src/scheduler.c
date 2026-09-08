@@ -7,6 +7,17 @@ typedef struct task{
     int periodo;
     int deadline;
     int burst;
+
+    int restante;
+    int proxima_chegada;
+    int deadline_absoluto;
+
+    int completas;
+    int perdidas;
+    int killed;
+
+    int ativa;
+
     struct task *next;
 }task;
 
@@ -14,6 +25,8 @@ int main(int argc, char *argv[]){
     task *head = NULL;
 
     int tempo_total;
+
+    int tempo = 0;
 
     FILE *arquivo;
 
@@ -89,6 +102,16 @@ int main(int argc, char *argv[]){
             return 1;
         }
 
+        novo->restante = novo->burst;
+        novo->proxima_chegada = 0;
+        novo->deadline_absoluto = novo->deadline;
+
+        novo->completas = 0;
+        novo->perdidas = 0;
+        novo->killed = 0;
+
+        novo->ativa = 1;
+
         novo->next = NULL;
 
         if(head == NULL){
@@ -105,17 +128,76 @@ int main(int argc, char *argv[]){
         }
     }
 
-    task *atual = head;
+    while(tempo <tempo_total){
 
-    while (atual != NULL) {
-        printf("%s %d %d %d\n",
-            atual->nome,
-            atual->periodo,
-            atual->deadline,
-            atual->burst);
+        task *atual = head;
 
-        atual = atual->next;
+        while(atual != NULL){
+            if(tempo == atual->proxima_chegada){
+                atual->restante = atual->burst;
+                atual->deadline_absoluto = atual->proxima_chegada + atual->deadline;
+                atual->ativa = 1;
+            }
+
+            atual = atual->next;
+        }
+        task *escolhida = NULL;
+
+        atual = head;
+
+        while(atual != NULL){
+
+            if(atual->ativa == 1){
+                if(escolhida == NULL){
+                    escolhida = atual;
+                }
+                else if(strcmp(argv[1],"rate") == 0){
+                    if(atual->periodo < escolhida->periodo){
+                        escolhida = atual;
+                    }
+                }
+
+                else if(strcmp(argv[1],"edf") == 0){
+                    if(atual->deadline_absoluto < escolhida->deadline_absoluto){
+                        escolhida = atual;
+                    }
+                }
+            }
+
+            atual = atual->next;
+        }
+
+        if(escolhida != NULL){
+            printf("tempo=%d tarefa=%s restante=%d deadline=%d\n",tempo,escolhida->nome,escolhida->restante,escolhida->deadline_absoluto);
+        }
+
+        if(escolhida != NULL){
+            escolhida->restante--;
+        }
+
+        if(escolhida != NULL && escolhida->restante == 0){
+            escolhida->completas++;
+            escolhida->ativa = 0;
+            escolhida->proxima_chegada += escolhida->periodo;
+        }
+
+        atual = head;
+
+        while(atual != NULL){
+            if(atual->ativa == 1 && atual->restante > 0 && tempo + 1 == atual->deadline_absoluto){
+
+                atual->perdidas++;
+                atual->ativa = 0;
+                atual->restante = 0;
+                atual->proxima_chegada += atual->periodo;
+            }
+
+            atual = atual->next;
+        }
+
+        tempo++;
     }
+
 
     fclose(arquivo);
 
