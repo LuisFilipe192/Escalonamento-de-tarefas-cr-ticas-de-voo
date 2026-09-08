@@ -1,0 +1,9 @@
+Script started on 2026-09-08 11:20:13-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="100" LINES="9"]
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [K]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 src/scheduler.c -o scheduler
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler[27m./scheduler
+[?2004l[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make clean
+[?2004lrm -f scheduler
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 src/scheduler.c -o scheduler
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE
