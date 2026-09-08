@@ -300,6 +300,14 @@ int main(int argc, char *argv[]){
         atual = atual->next;
     }
 
+    atual = head;
+
+    while(atual != NULL){
+        task *proxima = atual->next;
+        free(atual);
+        atual = proxima;
+    }
+
 
     fclose(arquivo);
     fclose(saida);
