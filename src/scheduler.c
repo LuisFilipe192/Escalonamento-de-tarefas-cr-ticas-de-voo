@@ -26,10 +26,6 @@ int main(int argc, char *argv[]){
 
     int tempo_total;
 
-    int tempo = 0;
-
-    FILE *arquivo;
-
     if(argc != 3){
         fprintf(stderr,"Erro: número incorreto de argumentos.\n");
         return 1;
@@ -39,6 +35,8 @@ int main(int argc, char *argv[]){
         fprintf(stderr,"Erro: algoritmo inválido.\n");
         return 1;
     }
+    
+    FILE *arquivo;
 
     arquivo = fopen(argv[2],"r");
 
@@ -128,6 +126,34 @@ int main(int argc, char *argv[]){
         }
     }
 
+
+    FILE *saida;
+
+    if(strcmp(argv[1], "rate") == 0){
+        saida =fopen("rate_lfass.out","w");
+    }
+    else{
+        saida =fopen("edf_lfass.out","w");
+    }
+
+    if(saida == NULL){
+        fprintf(stderr,"Erro: não foi possível criar o arquivo de saída.\n");
+        fclose(arquivo);
+        return 1;
+    }
+
+    if(strcmp(argv[1],"rate") == 0){
+        fprintf(saida,"EXECUTION BY RATE\n");
+    } else {
+        fprintf(saida,"EXECUTION BY EDF\n");
+    }
+    
+    int tempo = 0;
+
+    task *em_execucao = NULL;
+    int unidades_execucao = 0;
+
+
     while(tempo <tempo_total){
 
         task *atual = head;
@@ -163,8 +189,20 @@ int main(int argc, char *argv[]){
                     }
                 }
             }
-
             atual = atual->next;
+        }
+
+        if(escolhida != em_execucao){
+            if(em_execucao != NULL){
+                fprintf(saida,"[%s] for %d units - H\n",em_execucao->nome,unidades_execucao);
+            }
+
+            em_execucao = escolhida;
+            unidades_execucao =0;
+        }
+
+        if(escolhida != NULL){
+            unidades_execucao++;
         }
 
         if(escolhida != NULL){
@@ -175,16 +213,28 @@ int main(int argc, char *argv[]){
             escolhida->restante--;
         }
 
-        if(escolhida != NULL && escolhida->restante == 0){
+        if (escolhida != NULL && escolhida->restante == 0) {
+            fprintf(saida, "[%s] for %d units - F\n",escolhida->nome, unidades_execucao);
+
             escolhida->completas++;
             escolhida->ativa = 0;
             escolhida->proxima_chegada += escolhida->periodo;
+
+            em_execucao = NULL;
+            unidades_execucao = 0;
         }
 
         atual = head;
 
         while(atual != NULL){
             if(atual->ativa == 1 && atual->restante > 0 && tempo + 1 == atual->deadline_absoluto){
+
+                if(atual == em_execucao){
+                    fprintf(saida, "[%s] for %d units - L\n",atual->nome,unidades_execucao);
+
+                    em_execucao = NULL;
+                    unidades_execucao = 0;
+                }
 
                 atual->perdidas++;
                 atual->ativa = 0;
@@ -198,8 +248,48 @@ int main(int argc, char *argv[]){
         tempo++;
     }
 
+    task *atual = NULL;
+    
+    atual = head;
+
+    while(atual != NULL){
+        if(atual->ativa == 1 && atual->restante > 0){
+            atual->killed++;
+        }
+
+        atual = atual->next;
+    }
+
+    
+
+    fprintf(saida,"LOST DEADLINES\n");
+
+    atual = head;
+
+    while(atual != NULL){
+        fprintf(saida,"[%s] %d\n", atual->nome, atual->perdidas);
+        atual = atual->next;
+    }
+
+    fprintf(saida,"COMPLETE EXECUTION\n");
+    atual = head;
+
+    while(atual != NULL){
+        fprintf(saida,"[%s] %d\n", atual->nome, atual->completas);
+        atual = atual->next;
+    }
+
+    fprintf(saida,"KILLED\n");
+    atual = head;
+
+    while(atual != NULL){
+        fprintf(saida,"[%s] %d\n", atual->nome, atual->killed);
+        atual = atual->next;
+    }
+
 
     fclose(arquivo);
+    fclose(saida);
 
     return 0;
 }
