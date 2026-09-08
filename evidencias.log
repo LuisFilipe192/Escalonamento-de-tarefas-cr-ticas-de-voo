@@ -124,4 +124,20 @@ Erro: não foi possível abrir o arquivo.
 [?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ ./scheduler rate teste.txt[K./scheduler rate teste.txtecho $?[K./scheduler rate teste.txtecho $?[K
 [?2004l1
 [?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make clean
-[?200
+[?2004lrm -f scheduler
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make[K[K[K[K[7mecho -e "100\nATT 20 12 8\nNAV 50 30 15" > tes[27m[7mt[27m[7me.txt[27m[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ echo -e "100\nATT 20 12 8\nNAV 50 30 15" > teste.txt
+[?2004l[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 src/scheduler.c -o scheduler
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler rate teste.txt[27m
+[7mecho $?[27m[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ ./scheduler rate teste.txt
+echo $?
+[?2004l0
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 src/scheduler.c -o scheduler
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler rate teste.txt[27m
+[7mecho $?[27m[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ ./scheduler rate teste.txt
+echo $?
+[?2004lATT 20 12 8
+NAV 50 30 15
+0
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalo

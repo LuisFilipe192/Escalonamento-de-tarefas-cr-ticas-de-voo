@@ -45,45 +45,77 @@ int main(int argc, char *argv[]){
     }
 
 
-    task *novo = (task*)malloc(sizeof(task));
+    while(1){
+        task *novo = malloc(sizeof(task));
 
-    if(novo == NULL){
-        fprintf(stderr, "Erro: falha ao alocar memória.\n");
-        fclose(arquivo);
-        return 1;
+        if(novo == NULL){
+            fprintf(stderr,"Erro: falha ao alocar memória.\n");
+            fclose(arquivo);
+            return 1;
+        }
+
+        int resultado = fscanf(arquivo,"%49s %d %d %d", novo->nome,&novo->periodo,&novo->deadline,&novo->burst);
+
+        if(resultado == EOF){
+            free(novo);
+            break;
+        }
+
+        if(resultado != 4){
+            fprintf(stderr,"Erro: arquivo malformado.\n");
+            free(novo);
+            fclose(arquivo);
+            return 1;
+        }
+
+        if(novo->periodo <= 0 || novo->deadline <= 0 || novo->burst <= 0){
+            fprintf(stderr,"Erro: os valores da tarefa devem ser positivos.\n");
+            free(novo);
+            fclose(arquivo);
+            return 1;
+        }
+
+        if(novo->burst > novo->deadline){
+            fprintf(stderr,"Erro: burst não pode ser maior que o deadline.\n");
+            free(novo);
+            fclose(arquivo);
+            return 1;
+        }
+
+        if(novo->deadline > novo->periodo){
+            fprintf(stderr,"Erro: deadline não pode ser maior que o período.\n");
+            free(novo);
+            fclose(arquivo);
+            return 1;
+        }
+
+        novo->next = NULL;
+
+        if(head == NULL){
+            head = novo;
+        }
+        else{
+            task *atual = head;
+
+            while(atual->next != NULL){
+                atual = atual->next;
+            }
+
+            atual->next = novo;
+        }
     }
 
-    if (fscanf(arquivo,"%49s %d %d %d", novo->nome, &novo->periodo,&novo->deadline,&novo->burst) != 4){
-        fprintf(stderr,"Erro: arquivo com argumentos inválidos.\n");
-        fclose(arquivo);
-        free(novo);
-        return 1;
+    task *atual = head;
+
+    while (atual != NULL) {
+        printf("%s %d %d %d\n",
+            atual->nome,
+            atual->periodo,
+            atual->deadline,
+            atual->burst);
+
+        atual = atual->next;
     }
-
-    if(novo->periodo <= 0 || novo->deadline <= 0 || novo->burst <= 0){
-        fprintf(stderr,"Erro: os valores da tarefa devem ser positivos.\n");
-        free(novo);
-        fclose(arquivo);
-        return 1;
-    }
-
-    if(novo->burst > novo->deadline){
-        fprintf(stderr,"Erro: burst não pode ser maior que o deadline.\n");
-        free(novo);
-        fclose(arquivo);
-        return 1;
-    }
-
-    if(novo->deadline > novo->periodo){
-        fprintf(stderr,"Erro: deadline não pode ser maior que o período.\n");
-        free(novo);
-        fclose(arquivo);
-        return 1;
-    }
-
-    novo->next = NULL;
-    head = novo;
-
 
     fclose(arquivo);
 
