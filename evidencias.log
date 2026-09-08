@@ -6,4 +6,36 @@ Script started on 2026-09-08 11:20:13-03:00 [TERM="xterm-256color" TTY="/dev/pts
 [?2004lrm -f scheduler
 [?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make
 [?2004lgcc -Wall -Wextra -std=c11 src/scheduler.c -o scheduler
-[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make clean
+[?2004lrm -f scheduler
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ maker
+[?2004lCommand 'maker' not found, did you mean:
+  command 'marker' from snap marker (2023.05.02)
+  command 'make' from deb make (4.3-4.1build1)
+  command 'make' from deb make-guile (4.3-4.1build1)
+  command 'makeg' from deb xutils-dev (1:7.7+6.2)
+  command 'wmaker' from deb wmaker-common (0.96.0-2)
+  command 'faker' from deb faker (0.9.3-2)
+See 'snap info <snapname>' for additional versions.
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 src/scheduler.c -o scheduler
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler[27m./scheduler
+[?2004lErro: número incorreto de argumentos.
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [K]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [K]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [K]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [K]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [K]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler rate inexistente.txt[27m./scheduler rate inexistente.txt
+[?2004lErro: não foi possível abrir o arquivo.
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler rate inexistente.txt[27m[1P./scheduler rate inexistente.tx[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ke teste.txt
+[?2004l[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make clean
+[?2004lrm -f scheduler
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ maek[K[Kke
+[?2004lgcc -Wall -Wextra -std=c11 src/scheduler.c -o scheduler
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler abc teste.txt[27m./scheduler abc teste.txt
+[?2004lErro: algoritmo inválido.
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler rate teste.txt[27m
+[7m./scheduler edf teste.txt[27m[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ ./scheduler rate teste.txt
+./scheduler edf teste.txt
+[?2004lErro: não foi possível abrir o arquivo.
+Erro: não foi possível abrir o arquivo.
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler rate teste.txt[27m
+[7m./scheduler edf teste.txt[27m[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ ./scheduler rate teste.txt
+./scheduler edf teste.txt
+[?2004l[?2004h]0;luisf@aluisio: /mnt/c/U
