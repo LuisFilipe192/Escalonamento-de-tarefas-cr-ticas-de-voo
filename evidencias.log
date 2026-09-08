@@ -827,4 +827,52 @@ KILLED
 [NAV] 0
 [?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make clean
 [?2004lrm -f scheduler
-[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler edf teste.txt[27m[1P./scheduler edf teste.tx[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmak
+[?2004lCommand 'mak' not found, did you mean:
+  command 'mako' from deb mako-notifier (1.8.0-2)
+  command 'man' from deb man-db (2.12.0-1)
+  command 'mark' from deb mailutils-mh (1:3.16-1build1)
+  command 'mark' from deb mmh (0.4-6)
+  command 'mark' from deb nmh (1.8-1)
+  command 'mawk' from deb mawk (1.3.4.20231126-1)
+  command 'maq' from deb maq (0.7.1-9)
+  command 'mag' from deb texlive-binaries (2023.20230311.66589-8build1)
+  command 'make' from deb make (4.3-4.1build1)
+  command 'make' from deb make-guile (4.3-4.1build1)
+  command 'sak' from deb seqan-apps (2.4.0+dfsg-15ubuntu1)
+  command 'kak' from deb kakoune (2022.10.31-2)
+Try: sudo apt install <deb name>
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 src/scheduler.c -o scheduler
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler edf teste.txt[27m./scheduler edf teste.txt
+[?2004l[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ ./scheduler edf teste.txtmake[K[Ke cleancat rate_lfass.out./scheduler rate teste.txt[8Pcat rate_lfass.out
+[?2004lcat: rate_lfass.out: No such file or directory
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ cat teste.txt
+[?2004l100
+ATT 20 12 8
+NAV 50 30 15[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ cat edf_lfass.ouy[Kt
+[?2004lEXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+idle for 12 units
+LOST DEADLINES
+[ATT] 0
+[NAV] 0
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 2
+KILLED
+[ATT] 0
+[NAV] 0
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler edf teste.txt[27m
+[7mcat edf_lfass.out[27m[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ ./scheduler edf teste.txt
+cat edf_lfas
