@@ -1059,4 +1059,148 @@ KILLED
 [NAV] for 2 units - L
 idle for 10 units
 [ATT] for 8 units - F
-idle fo
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+idle for 12 units
+LOST DEADLINES
+[ATT] 0
+[NAV] 1
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 1
+KILLED
+[ATT] 0
+[NAV] 0
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler rate teste.txt[27m
+[7mcat rate_lfass.out[27m[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ ./scheduler rate teste.txt
+cat rate_lfass.out
+[?2004lEXECUTION BY RATE
+[A] for 3 units - F
+[B] for 3 units - F
+idle for 4 units
+LOST DEADLINES
+[A] 0
+[B] 0
+COMPLETE EXECUTION
+[A] 1
+[B] 1
+KILLED
+[A] 0
+[B] 0
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler rate teste.txt[27m
+[7mcat rate_lfass.out[27m[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ ./scheduler rate teste.txt
+cat rate_lfass.out
+[?2004lEXECUTION BY RATE
+[A] for 5 units - F
+idle for 5 units
+LOST DEADLINES
+[A] 0
+COMPLETE EXECUTION
+[A] 1
+KILLED
+[A] 0
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7m./scheduler rate teste.txt[27m
+[7mcat rate_lfass.out[27m[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ ./scheduler rate teste.txt
+cat rate_lfass.out
+[?2004lErro: burst não pode ser maior que o deadline.
+EXECUTION BY RATE
+[A] for 5 units - F
+idle for 5 units
+LOST DEADLINES
+[A] 0
+COMPLETE EXECUTION
+[A] 1
+KILLED
+[A] 0
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7mrm -f rate_lfass.out[27m
+[7m./scheduler rate teste.txt[27m
+[7mcat rate_lfass.out[27m[A[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ rm -f rate_lfass.out
+./scheduler rate teste.txt
+cat rate_lfass.out
+[?2004lEXECUTION BY RATE
+[B] for 2 units - F
+[A] for 3 units - L
+[B] for 2 units - F
+idle for 3 units
+LOST DEADLINES
+[A] 1
+[B] 0
+COMPLETE EXECUTION
+[A] 0
+[B] 2
+KILLED
+[A] 0
+[B] 0
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7mrm -f rate_lfass.out[27m
+[7m./scheduler rate teste.txt[27m
+[7mcat rate_lfass.out[27m[A[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ rm -f rate_lfass.out
+./scheduler rate teste.txt
+cat rate_lfass.out
+[?2004lEXECUTION BY RATE
+[B] for 5 units - F
+[B] for 5 units - F
+LOST DEADLINES
+[A] 1
+[B] 0
+COMPLETE EXECUTION
+[A] 0
+[B] 2
+KILLED
+[A] 0
+[B] 0
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7mrm -f rate_lfass.out[27m
+[7m./scheduler rate teste.txt[27m
+[7mcat rate_lfass.out[27m[A[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ rm -f rate_lfass.out
+./scheduler rate teste.txt
+cat rate_lfass.out
+[?2004lEXECUTION BY RATE
+[A] for 3 units - F
+idle for 7 units
+LOST DEADLINES
+[A] 0
+COMPLETE EXECUTION
+[A] 1
+KILLED
+[A] 0
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7mrm -f rate_lfass.out[27m
+[7m./scheduler rate teste.txt[27m
+[7mcat rate_lfass.out[27m[A[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ rm -f rate_lfass.out
+./scheduler rate teste.txt
+cat rate_lfass.out
+[?2004lEXECUTION BY RATE
+[A] for 3 units - F
+[B] for 2 units - L
+[A] for 3 units - F
+[B] for 2 units - L
+LOST DEADLINES
+[A] 0
+[B] 2
+COMPLETE EXECUTION
+[A] 2
+[B] 0
+KILLED
+[A] 0
+[B] 0
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ [7mrm -f rate_lfass.out[27m
+[7m./scheduler rate teste.txt[27m
+[7mcat rate_lfass.out[27m[A[A]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[00m$ rm -f rate_lfass.out
+./scheduler rate teste.txt
+cat rate_lfass.out
+[?2004lEXECUTION BY RATE
+[A] for 3 units - F
+idle for 2 units
+[A] for 3 units - F
+idle for 2 units
+[A] for 3 units - F
+idle for 2 units
+LOST DEADLINES
+[A] 0
+COMPLETE EXECUTION
+[A] 3
+KILLED
+[A] 0
+[?2004h]0;luisf@aluisio: /mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo[01;32mluisf@aluisio[00m:[01;34m/mnt/c/Users/luisf/FACULDADE/lfass - 3/Escalonamento-de-tarefas-cr-ticas-de-voo
